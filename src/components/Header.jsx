@@ -8,7 +8,7 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
-    <div className="flex justify-between mb-8 drawer ">
+    <div className="flex justify-between drawer sticky top-0 z-50 bg-[#F9FAFB] py-4 px-1 rounded-b-md lg:static">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="flex items-center gap-2 drawer-content">
         <label
