@@ -4,12 +4,10 @@ import { ImCommand } from "react-icons/im";
 import { LuSearch } from "react-icons/lu";
 import { MdMenuOpen } from "react-icons/md";
 import { RiNotificationSnoozeFill, RiSettings3Fill } from "react-icons/ri";
-import Sidebar from "./Sidebar";
-import { ChartBarIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
   return (
-    <div className="flex justify-between mb-8 drawer">
+    <div className="flex justify-between mb-8 drawer ">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="flex items-center gap-2 drawer-content">
         <label
