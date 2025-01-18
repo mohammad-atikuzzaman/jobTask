@@ -4,6 +4,7 @@ import { ImCommand } from "react-icons/im";
 import { LuSearch } from "react-icons/lu";
 import { MdMenuOpen } from "react-icons/md";
 import { RiNotificationSnoozeFill, RiSettings3Fill } from "react-icons/ri";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
           htmlFor="my-drawer"
           className="lg:hidden text-3xl mr-4 drawer-button"
         >
-          <MdMenuOpen />
+          <MdMenuOpen className="text-green-700"/>
         </label>
         <LuSearch className="text-xl" />
         <button className="flex items-center bg-gray-200 px-1 rounded-md font-semibold text-gray-700">
@@ -41,15 +42,7 @@ const Header = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-          {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
-        </ul>
+        <MobileMenu />
       </div>
     </div>
   );

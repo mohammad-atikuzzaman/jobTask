@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import { FaMailBulk } from "react-icons/fa";
 import {
   FaCartFlatbed,
@@ -7,17 +7,21 @@ import {
   FaFolderClosed,
   FaHouseUser,
 } from "react-icons/fa6";
-import { IoBagCheck, IoCalendar, IoChatboxEllipses, IoSpeedometerOutline } from "react-icons/io5";
+import {
+  IoBagCheck,
+  IoCalendar,
+  IoChatboxEllipses,
+  IoSpeedometerOutline,
+} from "react-icons/io5";
 import { LuChartNoAxesCombined, LuNotepadText } from "react-icons/lu";
 import { MdAirplaneTicket, MdMail, MdTour } from "react-icons/md";
 import { RiBankFill } from "react-icons/ri";
 import { TbHanger2Filled } from "react-icons/tb";
 
-const Sidebar = () => {
-
+const MobileMenu = () => {
   return (
-    <aside className="hidden lg:flex flex-col w-64 bg-white border-r border-gray-200 sticky top-0 h-screen">
-      <div className="text-2xl font-bold text-green-600 p-5">LOGO</div>
+    <div className="bg-white w-1/2 min-h-screen">
+        <h2 className="font-bold text-3xl text-green-600 m-4">logo</h2>
       <nav className="flex-1 px-2 space-y-4 overflow-y-auto custom-scrollbar">
         <h3 className="text-gray-400 text-sm uppercase">Overview</h3>
         <ul className="space-y-3">
@@ -94,8 +98,8 @@ const Sidebar = () => {
           </li>
         </ul>
       </nav>
-    </aside>
+    </div>
   );
 };
 
-export default Sidebar;
+export default MobileMenu;
