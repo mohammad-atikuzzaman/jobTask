@@ -2,7 +2,7 @@ import { ChartBarIcon } from "@heroicons/react/24/outline";
 
 const Sidebar = () => {
   return (
-    <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
+    <aside className="hidden w-64 bg-white border-r border-gray-200 lg:flex flex-col">
       <div className="text-2xl font-bold text-green-600 p-5">LOGO</div>
       <nav className="flex-1 px-2 space-y-4">
         <h3 className="text-gray-400 text-sm uppercase">Overview</h3>
